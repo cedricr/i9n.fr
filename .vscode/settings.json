@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"**/.netlify": true,
+		"**/build": true,
+		"**/.svelte-kit": true
+	}
+}
