@@ -8,8 +8,8 @@
 		"preview": "vite preview",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"deploy-staging": "netlify deploy --dir=build --alias=preview",
-		"deploy": "netlify deploy --dir=build --prod",
+		"deploy-staging": "npm run build && netlify deploy --dir=build --alias=preview",
+		"deploy": "npm run build && netlify deploy --dir=build --prod",
 		"clean": "rm -rf .svelte-kit build node_modules"
 	},
 	"devDependencies": {
