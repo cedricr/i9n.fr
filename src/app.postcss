@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+	font-family: Inter, sans-serif;
+	font-feature-settings:
+		'liga' 1,
+		'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: InterVariable, sans-serif;
+	}
+}
+
+.font-title {
+	font-variation-settings: 'opsz' 32;
+	font-feature-settings:
+		'liga' 1,
+		'calt' 1,
+		'cv11' 1,
+		'cv12' 1,
+		'cv13' 1;
+}
+
+body {
+	@apply bg-[#FDFEFF] text-zinc-700;
+}
+
+a {
+	@apply underline decoration-zinc-300 decoration-from-font;
+}
+a:hover {
+	@apply no-underline;
+}
+
+a:focus {
+	@apply no-underline outline-zinc-300;
+}
