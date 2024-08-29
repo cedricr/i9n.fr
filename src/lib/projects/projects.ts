@@ -1,73 +1,107 @@
 import type { Projects } from '$lib/types';
 
 const projects: Projects = {
-	proj1: {
-		title: 'Consectetur non velit tempor laboris mollit officia minim ea qui reprehenderit.',
-		thumbnail: 'https://placehold.co/400x100',
+	"ensoleillement": {
+		title: "Cartes d’ensoleillement",
+		thumbnail: "/projects/ensoleillement-thumb.jpg",
 		images: [
-			{ path: 'https://placehold.co/1080x800', alt: 'Lorem ipsum' },
-			{ path: 'https://placehold.co/1080x1200', alt: 'Lorem ipsum' }
+			{ path: '/projects/ensoleillement-nice.jpg', alt: 'Lorem ipsum' },
+			{ path: '/projects/ensoleillement-blois.png', alt: 'Lorem ipsum' }
 		],
 		shortDesc: `
-    Anim anim labore irure et. Nulla eu mollit enim in quis veniam proident exercitation pariatur proident anim eiusmod irure et. Ad velit ullamco officia qui. Dolore sit ex nulla dolor quis in est id consectetur qui officia magna. Lorem tempor magna excepteur eu cupidatat voluptate culpa incididunt reprehenderit aliquip veniam ullamco deserunt laborum.
-    `,
+			Cartes d’ensoleillement à partir de modèles numériques de surface. La luminosité de chaque point 
+			de l’image correspond à son éclairage au long d’une journée : un point blanc est toujours au soleil, un point noir ne le voit jamais.
+		`,
 		fullDesc: `
-    Reprehenderit ipsum sint tempor commodo cupidatat veniam. Laborum minim eiusmod do labore sint. Velit ipsum Lorem nostrud ipsum duis et dolore nulla id minim enim adipisicing sit laboris. Deserunt ut et quis dolore ea et Lorem sit veniam. Minim voluptate veniam ad incididunt sunt consectetur culpa nisi ex nulla. Sint incididunt ipsum cupidatat cupidatat ad fugiat ipsum.
-
-    Nostrud culpa cillum ad elit consectetur eu nisi velit ad. Tempor dolore culpa consectetur aliqua qui cupidatat laborum aliqua nostrud mollit anim nisi. Dolor dolor aliqua nostrud ullamco veniam laboris elit consequat.
-
-    Enim sunt magna ut cupidatat aliqua laboris cupidatat proident. In consectetur amet et amet dolor laborum sint. Sint consectetur Lorem pariatur ut enim velit voluptate non cupidatat reprehenderit. Et aliqua fugiat do voluptate incididunt. Id Lorem et voluptate voluptate qui. Lorem elit dolore laboris nisi veniam ut et aute mollit aliquip anim id cillum anim. Eu ut enim dolore aliqua dolor commodo elit exercitation adipisicing enim.
-    `
+			https://geoservices.ign.fr/modeles-numeriques-de-surfaces-correles
+		`
 	},
-
-	proj2: {
-		title: 'Laboris amet consequat ad pariatur ad officia ut ut culpa deserunt excepteur amet.',
-		thumbnail: 'https://placehold.co/400x100',
+	"europeennes-2024": {
+		title: "Résultats des élections européennes 2024",
+		thumbnail: "/projects/europeennes-2024-thumb.jpg",
 		images: [
-			{ path: 'https://placehold.co/1080x800', alt: 'Lorem ipsum' },
-			{ path: 'https://placehold.co/1080x1200', alt: 'Lorem ipsum' }
+			{ path: '/projects/europeennes-2024-cartogramme.png', alt: 'Lorem ipsum' },
+			{ path: '/projects/europeennes-2024-densite-points.png', alt: 'Lorem ipsum' }
 		],
 		shortDesc: `
-    Anim anim labore irure et. Nulla eu mollit enim in quis veniam proident exercitation pariatur proident anim eiusmod irure et. Ad velit ullamco officia qui. Dolore sit ex nulla dolor quis in est id consectetur qui officia magna. Lorem tempor magna excepteur eu cupidatat voluptate culpa incididunt reprehenderit aliquip veniam ullamco deserunt laborum.
-    `,
+	    Expérimentations cartographiques pour essayer de representer de façon plus juste les votants.
+		`,
 		fullDesc: `
-    Reprehenderit ipsum sint tempor commodo cupidatat veniam. Laborum minim eiusmod do labore sint. Velit ipsum Lorem nostrud ipsum duis et dolore nulla id minim enim adipisicing sit laboris. Deserunt ut et quis dolore ea et Lorem sit veniam. Minim voluptate veniam ad incididunt sunt consectetur culpa nisi ex nulla. Sint incididunt ipsum cupidatat cupidatat ad fugiat ipsum.
-
-    Nostrud culpa cillum ad elit consectetur eu nisi velit ad. Tempor dolore culpa consectetur aliqua qui cupidatat laborum aliqua nostrud mollit anim nisi. Dolor dolor aliqua nostrud ullamco veniam laboris elit consequat.
-
-    Enim sunt magna ut cupidatat aliqua laboris cupidatat proident. In consectetur amet et amet dolor laborum sint. Sint consectetur Lorem pariatur ut enim velit voluptate non cupidatat reprehenderit. Et aliqua fugiat do voluptate incididunt. Id Lorem et voluptate voluptate qui. Lorem elit dolore laboris nisi veniam ut et aute mollit aliquip anim id cillum anim. Eu ut enim dolore aliqua dolor commodo elit exercitation adipisicing enim.
-    `,
-		coAuthors: ['co auteur 1']
+		`
 	},
-	proj3: {
-		title:
-			'Incididunt deserunt nulla proident ullamco amet consequat pariatur laboris veniam tempor.',
-		thumbnail: 'https://placehold.co/600x400',
-		images: [],
+	"canopee-lidarhd": {
+		title: "Canopée des villes françaises",
+		thumbnail: "/projects/canope-thumb.jpg",
+		images: [
+			{ path: '/projects/canope-toulouse.png', alt: 'Lorem ipsum' }
+		],
 		shortDesc: `
-    Nostrud dolore velit dolor esse nostrud Lorem occaecat veniam dolor et officia. Esse consectetur ea exercitation ex pariatur tempor aute anim dolor qui. Eiusmod esse amet laboris irure incididunt ex enim ullamco voluptate et incididunt incididunt laboris tempor.
-    `,
+		Extraction de la canopée à partir des données LidarHD de l’IGN.
+		`,
 		fullDesc: `
-    Enim mollit ullamco eiusmod occaecat consectetur do velit amet. Amet proident fugiat veniam amet sit anim. Quis sunt labore laborum magna occaecat ullamco mollit exercitation eiusmod cillum. Mollit anim aute id voluptate proident deserunt sint exercitation consequat. Nulla quis aute elit eu dolore pariatur qui. Cupidatat ut magna aute dolore sit ullamco occaecat ex.
-
-    Esse consequat quis duis reprehenderit excepteur. Sint ipsum voluptate ea exercitation do culpa. Dolor sint deserunt veniam laborum excepteur fugiat est tempor laboris voluptate. Qui sint fugiat officia anim. Qui culpa amet reprehenderit id mollit eiusmod.
-    `,
-		coAuthors: ['co auteur 1', 'co auteur 2']
+		`
 	},
-	proj4: {
-		title: 'Proident fugiat consequat pariatur incididunt incididunt aliqua nisi.',
-		thumbnail: 'https://placehold.co/600x700',
-		images: [],
+	"visionscarto-circos": {
+		title: "« Quel est votre poids électoral ? »",
+		thumbnail: "/projects/visionscarto-circos-thumb.jpg",
+		images: [
+			{ path: '/projects/visionscarto-circos.png', alt: 'Lorem ipsum' }
+		],
 		shortDesc: `
-    Nostrud dolore velit dolor esse nostrud Lorem occaecat veniam dolor et officia. Esse consectetur ea exercitation ex pariatur tempor aute anim dolor qui. Eiusmod esse amet laboris irure incididunt ex enim ullamco voluptate et incididunt incididunt laboris tempor.
-    `,
+			Les circonscriptions électorales ont un nombre très différent d’inscrit·es.
+			Sachant que chaque circonscription élit un·e seul·e député·e, plus il y a d’électeurs ou d’électrices, moins le « poids » individuel est important.
+		`,
+		fullDesc: `https://www.visionscarto.net/quel-est-votre-poids-electoral`,
+		coAuthors: ["Philippe Rivière"]
+	},
+	"seqe-ue": {
+		title: "Les émissions industrielles de gaz à effet de serre ",
+		thumbnail: "/projects/seqe-ue-fr-2023-1080-thumb.jpg",
+		images: [
+			{ path: '/projects/seqe-ue-fr-2023-1080.png', alt: 'Lorem ipsum' },
+			{ path: '/projects/seqe-ue-eu-2023-1080.png', alt: 'Lorem ipsum' }
+		],
+		shortDesc: `
+			Cartographies diverses des émissions vérifiées de GES des installations soumises au système d’échange de quotas d’émissions de l’UE.
+		`,
 		fullDesc: `
-    Enim mollit ullamco eiusmod occaecat consectetur do velit amet. Amet proident fugiat veniam amet sit anim. Quis sunt labore laborum magna occaecat ullamco mollit exercitation eiusmod cillum. Mollit anim aute id voluptate proident deserunt sint exercitation consequat. Nulla quis aute elit eu dolore pariatur qui. Cupidatat ut magna aute dolore sit ullamco occaecat ex.
+	    Depuis 2019 je maintiens un jeu de données, etc.
 
-    Esse consequat quis duis reprehenderit excepteur. Sint ipsum voluptate ea exercitation do culpa. Dolor sint deserunt veniam laborum excepteur fugiat est tempor laboris voluptate. Qui sint fugiat officia anim. Qui culpa amet reprehenderit id mollit eiusmod.
-    `,
-		coAuthors: ['co auteur 1', 'co auteur 2', 'co auteur 3']
-	}
+	    - données [data.gouv](https://www.data.gouv.fr/fr/datasets/emissions-de-gaz-a-effet-de-serre-des-installations-soumises-a-quota-de-lue/#/information)
+		`
+	},
+	"icu-paris-nacis": {
+		title: "Les ilots de chaleur parisiens",
+		thumbnail: "/projects/icu-paris-nacis-thumb.jpg",
+		images: [
+			{ path: '/projects/icu-paris-nacis-1080.png', alt: 'Lorem ipsum' }
+		],
+		shortDesc: `
+			Représentation des ilots de chaleur parisiens. Réalisation dans le cadre d’une soumission au Volume VI de 
+			“l’Atlas of Design” de la NACIS. 
+		`,
+		fullDesc: `
+			NACIS 2022 Atlas of Design  [Mention honorable](https://atlasofdesign.org/2022/04/29/finalists/)
+		`
+	},
+	"mediapart-icu": {
+		title: "« Inégalités climatiques : comment les riches accaparent les espaces verts »",
+		thumbnail: "/projects/icu-mediapart-lille-thumb.jpg",
+		images: [
+			{ path: '/projects/icu-mediapart-lille-env.png', alt: 'Lorem ipsum' },
+			{ path: '/projects/icu-mediapart-lille-orthophoto.png', alt: 'Lorem ipsum' },
+			{ path: '/projects/icu-mediapart-lille-temperatures.png', alt: 'Lorem ipsum' },
+			{ path: '/projects/icu-mediapart-lille-niveau-de-vie.png', alt: 'Lorem ipsum' },
+			{ path: '/projects/icu-mediapart-lille-vulnerabilites.png', alt: 'Lorem ipsum' },
+		],
+		shortDesc: `
+	    Une collaboration avec Mediapart sur les possibles corrélations entre inégalités climatiques et inégalités sociales.
+		`,
+		fullDesc: `
+	    https://www.mediapart.fr/journal/ecologie/120823/inegalites-climatiques-comment-les-riches-accaparent-les-espaces-verts
+		`,
+		coAuthors: ["Mickaël Correia", "Donatien Huet"]
+	},
 };
 
 export default projects;

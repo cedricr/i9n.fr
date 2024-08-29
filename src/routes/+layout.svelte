@@ -49,7 +49,7 @@
 	<main>
 		{@render children()}
 	</main>
-	<footer class="mt-8 border-t pt-3 text-zinc-500">
+	<footer class="mt-8 border-t pt-3 text-zinc-500 md:mt-24">
 		<div class="text-xs md:text-sm">
 			@ Cedric Rossi 2024
 			<a

@@ -21,7 +21,7 @@
 
 {#snippet displayAuthors(authors: string[])}
 	{#if authors?.length}
-		<div class="text-sm text-zinc-500">
+		<div class="mt-2 text-sm text-zinc-500">
 			Avec {#each authors as author, i}
 				{@const l = authors.length}
 				{#if i > 0}
@@ -38,22 +38,34 @@
 {/snippet}
 
 <div class="flex flex-col gap-2 text-zinc-700 md:flex-row md:gap-6">
-	<a
+	<!-- <a
 		href={target}
 		class="max-h-64 overflow-hidden md:basis-1/2"
 		aria-labelledby="project-title-{idx}"
 		tabindex="-1"
+	> -->
+	<div
+		href={target}
+		class="max-h-80 overflow-hidden md:basis-1/2"
+		aria-labelledby="project-title-{idx}"
+		tabindex="-1"
 	>
-		<img class="w-full object-fill" src={data.thumbnail} alt="" /></a
-	>
+		<img class="w-full object-fill" src={data.thumbnail} alt="" />
+	</div>
+	<!-- </a> -->
 	<div class="md:basis-1/2">
-		<h2 id="project-title-{idx}" class="text-md mb-2 font-medium md:text-lg">
-			<a href={target}>{data.title}</a>
+		<h2
+			id="project-title-{idx}"
+			class="text-md font-title mb-2 font-bold md:relative md:-top-1.5 md:text-lg"
+		>
+			<!-- <a href={target}> -->
+			{data.title}
+			<!-- </a> -->
 		</h2>
 		<p class="prose prose-sm prose-p:text-zinc-600">
-			<a href={target} aria-labelledby="project-title-{idx}" tabindex="-1" class="no-underline">
-				{@html converter.makeHtml(data.shortDesc)}
-			</a>
+			<!-- <a href={target} aria-labelledby="project-title-{idx}" tabindex="-1" class="no-underline"> -->
+			{@html converter.makeHtml(data.shortDesc)}
+			<!-- </a> -->
 		</p>
 		{@render displayAuthors(data?.coAuthors || [])}
 	</div>

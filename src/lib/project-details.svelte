@@ -46,7 +46,7 @@
 			<!-- https://rsms.me/inter/#glyphs/northWestArrow -->
 			<a href="/" class="no-underline hover:underline focus:underline">&#x2196</a>
 		</div>
-		<h2 class="mb-2 text-lg font-semibold md:text-2xl">
+		<h2 class="font-title mb-2 text-lg font-bold md:text-2xl">
 			{data.title}
 		</h2>
 		<p class="prose prose-sm prose-zinc md:prose-base prose-p:text-zinc-600">
