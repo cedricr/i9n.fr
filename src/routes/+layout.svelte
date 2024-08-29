@@ -66,5 +66,12 @@
 				{@render icon(saIcon)}
 			</div>
 		</div>
+		<div class="text-xs md:text-sm">
+			Ce site est hébergé par <a
+				href="https://www.netlify.com/"
+				target="_blank"
+				rel="noopener noreferrer">Netlify, Inc.</a
+			>, 512 2nd Street, Fl 2&nbsp;– San Francisco, CA 94107.
+		</div>
 	</footer>
 </div>
