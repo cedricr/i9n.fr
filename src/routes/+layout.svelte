@@ -7,7 +7,7 @@
 </script>
 
 {#snippet icon(rawIconStr: string)}
-	<div aria-hidden="true" class="relative top-0.5 inline-block h-3 w-3 md:h-4 md:w-4">
+	<div aria-hidden="true" class="relative top-0.5 inline-block h-3 w-3 md:h-3.5 md:w-3.5">
 		{@html rawIconStr}
 	</div>
 {/snippet}
@@ -21,7 +21,7 @@
 
 <div id="content" class="m-auto max-w-5xl px-5 py-8">
 	<header
-		class="mb-10 flex flex-col border-b pb-4 text-center md:mb-16 md:flex-row md:justify-between md:text-left"
+		class="mb-4 flex flex-col border-b pb-4 text-center md:mb-16 md:flex-row md:justify-between md:text-left"
 	>
 		<div class="mb-2 md:mb-0 md:self-baseline">
 			<h1 class="font-title text-4xl font-semibold text-zinc-700 md:text-5xl">
@@ -37,7 +37,7 @@
 		</div>
 
 		<div
-			class="md:text-md self-top m-auto flex flex-row flex-wrap items-start justify-center gap-x-2 text-xs text-zinc-600 md:m-0 md:gap-x-4"
+			class="md:text-md m-auto flex flex-row flex-wrap gap-x-2 text-xs text-zinc-600 md:relative md:top-3 md:m-0 md:gap-x-4"
 		>
 			{@render iconLink('https://mapstodon.space/@cedric', mastoIcon, 'Mastodon', true)}
 			{@render iconLink('https://github.com/cedricr', gitHubIcon, 'GitHub', true)}
@@ -60,10 +60,12 @@
 			>
 				CC BY-SA 4.0
 			</a>
-			<div class="inline-block fill-current">
-				{@render icon(ccIcon)}
-				{@render icon(byIcon)}
-				{@render icon(saIcon)}
+			<div class="ml-1 inline-block fill-current">
+				<div class="flex flex-row gap-1">
+					{@render icon(ccIcon)}
+					{@render icon(byIcon)}
+					{@render icon(saIcon)}
+				</div>
 			</div>
 		</div>
 		<div class="text-xs md:text-sm">

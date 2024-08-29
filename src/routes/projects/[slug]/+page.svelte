@@ -1,8 +1,9 @@
 <script lang="ts">
 	import showdown from 'showdown';
-	import ProjectViewer from '$lib/project-viewer.svelte';
+	import ProjectViewer from '$lib/project-details.svelte';
 	import projects from '$lib/projects/projects.js';
 	import type { Project } from '$lib/types';
+	import ProjectDetails from '$lib/project-details.svelte';
 
 	let { data } = $props();
 	const slug = data.slug;
@@ -10,4 +11,4 @@
 	const project: Project = projects[slug];
 </script>
 
-<ProjectViewer idx={0} {slug} short={false} data={project} />
+<ProjectDetails idx={0} {slug} data={project} />
