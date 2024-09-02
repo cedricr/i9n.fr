@@ -92,13 +92,9 @@ const projects: Projects = {
 			{ path: '/projects/icu-paris-nacis-1080.png', alt: '' }
 		],
 		shortDesc: `
-			Représentation des ilots de chaleur parisiens. Réalisation dans le cadre d’une soumission au Volume VI de 
-			“l’Atlas of Design” de la NACIS. 
+			Une représentation sous forme de contours d’élévation des températures de surface de Paris. 
 		`,
 		fullDesc: icuParisNacis
-		// `
-		// 	NACIS 2022 Atlas of Design  [Mention honorable](https://atlasofdesign.org/2022/04/29/finalists/)
-		// `
 	},
 	"icu-mediapart": {
 		title: "« Inégalités climatiques : comment les riches accaparent les espaces verts »",
