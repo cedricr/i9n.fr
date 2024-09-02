@@ -83,11 +83,7 @@ const projects: Projects = {
 			Cartographies diverses des émissions vérifiées de GES des installations soumises au système d’échange de quotas d’émissions de l’UE.
 		`,
 		fullDesc: seqeUe,
-		// `
-		//   Depuis 2019 je maintiens un jeu de données, etc.
 
-		//   - données [data.gouv](https://www.data.gouv.fr/fr/datasets/emissions-de-gaz-a-effet-de-serre-des-installations-soumises-a-quota-de-lue/#/information)
-		// `
 	},
 	"icu-paris-nacis": {
 		title: "Les ilots de chaleur parisiens",
