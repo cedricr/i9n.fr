@@ -29,5 +29,14 @@ export default [
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
+	},
+	{
+		rules: {
+			"no-irregular-whitespace": ["error", {
+				"skipStrings": true,
+				"skipComments": true,
+				"skipTemplates": true
+			}]
+		}
 	}
 ];
