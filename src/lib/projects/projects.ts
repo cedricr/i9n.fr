@@ -68,7 +68,7 @@ const projects: Projects = {
 			Sachant que chaque circonscription élit un·e seul·e député·e, plus il y a d’électeurs ou 
 			d’électrices, moins le « poids » individuel est important.
 		`,
-		fullDesc: visionscartoCircos, //`https://www.visionscarto.net/quel-est-votre-poids-electoral`,
+		fullDesc: visionscartoCircos,
 		coAuthors: ["Philippe Rivière"]
 	},
 

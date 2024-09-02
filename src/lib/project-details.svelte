@@ -48,10 +48,11 @@
 		<h2 class="font-title mb-2 text-lg font-bold md:text-2xl">
 			{data.title}
 		</h2>
-		<div class="prose prose-sm prose-zinc hyphens-auto md:prose-base prose-p:text-zinc-600">
+		<div
+			class="prose prose-sm prose-zinc hyphens-auto md:prose-base prose-p:leading-normal prose-p:text-zinc-600"
+		>
 			{@html converter.makeHtml(data.fullDesc || data.shortDesc)}
 		</div>
-		{@render displayAuthors(data?.coAuthors || [])}
 	</div>
 	<div class="flex flex-col gap-4 md:basis-7/12">
 		{#each data.images as image}
