@@ -31,7 +31,7 @@ const projects: Projects = {
 	},
 	"canopee-lidarhd": {
 		title: "Canopée des villes françaises",
-		thumbnail: "/projects/canope-thumb.jpg",
+		thumbnail: "/projects/canopee-lidarhd-thumb.jpg",
 		images: [
 			{ path: '/projects/canope-toulouse.png', alt: 'Lorem ipsum' }
 		],
@@ -56,7 +56,7 @@ const projects: Projects = {
 	},
 	"seqe-ue": {
 		title: "Les émissions industrielles de gaz à effet de serre ",
-		thumbnail: "/projects/seqe-ue-fr-2023-1080-thumb.jpg",
+		thumbnail: "/projects/seqe-ue-thumb.jpg",
 		images: [
 			{ path: '/projects/seqe-ue-fr-2023-1080.png', alt: 'Lorem ipsum' },
 			{ path: '/projects/seqe-ue-eu-2023-1080.png', alt: 'Lorem ipsum' }
@@ -84,9 +84,9 @@ const projects: Projects = {
 			NACIS 2022 Atlas of Design  [Mention honorable](https://atlasofdesign.org/2022/04/29/finalists/)
 		`
 	},
-	"mediapart-icu": {
+	"icu-mediapart": {
 		title: "« Inégalités climatiques : comment les riches accaparent les espaces verts »",
-		thumbnail: "/projects/icu-mediapart-lille-thumb.jpg",
+		thumbnail: "/projects/icu-mediapart-thumb.jpg",
 		images: [
 			{ path: '/projects/icu-mediapart-lille-env.png', alt: 'Lorem ipsum' },
 			{ path: '/projects/icu-mediapart-lille-orthophoto.png', alt: 'Lorem ipsum' },
