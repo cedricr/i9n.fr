@@ -2,7 +2,7 @@ export interface Project {
 	title: string;
 	thumbnail: string;
 	shortDesc: string;
-	images: { path: string; alt: string }[];
+	images: { path: string; alt: string, title?: string }[];
 	fullDesc?: string;
 	coAuthors?: string[];
 }
