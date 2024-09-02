@@ -1,5 +1,6 @@
 import type { Projects } from '$lib/types';
 import ensoleillement from "$lib/projects/assets/ensoleillement.md?raw"
+import europeennes2024 from "$lib/projects/assets/europeennes-2024.md?raw";
 
 const projects: Projects = {
 	"ensoleillement": {
@@ -20,14 +21,13 @@ const projects: Projects = {
 		title: "Résultats des élections européennes 2024",
 		thumbnail: "/projects/europeennes-2024-thumb.jpg",
 		images: [
-			{ path: '/projects/europeennes-2024-cartogramme.png', alt: 'Lorem ipsum' },
-			{ path: '/projects/europeennes-2024-densite-points.png', alt: 'Lorem ipsum' }
+			{ path: '/projects/europeennes-2024-cartogramme.png', alt: '', title: "Cartogramme des résultats" },
+			{ path: '/projects/europeennes-2024-densite-points.png', alt: '', title: "Carte en densité de points des résultats" }
 		],
 		shortDesc: `
-	    Expérimentations cartographiques pour essayer de representer de façon plus juste les votants.
+	    Expérimentations cartographiques pour essayer de representer de façon plus juste les votant·es.
 		`,
-		fullDesc: `
-		`
+		fullDesc: europeennes2024,
 	},
 	"canopee-lidarhd": {
 		title: "Canopée des villes françaises",
@@ -49,11 +49,12 @@ const projects: Projects = {
 		],
 		shortDesc: `
 			Les circonscriptions électorales ont un nombre très différent d’inscrit·es.
-			Sachant que chaque circonscription élit un·e seul·e député·e, plus il y a d’électeurs ou d’électrices, moins le « poids » individuel est important.
+			Sachant que chaque circonscription élit un·e seul·e député·e, plus il y a d’électeurs ou d’électrices, moins le « poids » individuel est important.
 		`,
 		fullDesc: `https://www.visionscarto.net/quel-est-votre-poids-electoral`,
 		coAuthors: ["Philippe Rivière"]
 	},
+
 	"seqe-ue": {
 		title: "Les émissions industrielles de gaz à effet de serre ",
 		thumbnail: "/projects/seqe-ue-thumb.jpg",
