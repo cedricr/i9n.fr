@@ -100,19 +100,16 @@ const projects: Projects = {
 		title: "« Inégalités climatiques : comment les riches accaparent les espaces verts »",
 		thumbnail: "/projects/icu-mediapart-thumb.jpg",
 		images: [
-			{ path: '/projects/icu-mediapart-lille-env.png', alt: '' },
-			{ path: '/projects/icu-mediapart-lille-orthophoto.png', alt: '' },
-			{ path: '/projects/icu-mediapart-lille-temperatures.png', alt: '' },
-			{ path: '/projects/icu-mediapart-lille-niveau-de-vie.png', alt: '' },
-			{ path: '/projects/icu-mediapart-lille-vulnerabilites.png', alt: '' },
+			{ path: '/projects/icu-mediapart-lille-env.png', alt: '', title: "La carte de la zone d’étude" },
+			{ path: '/projects/icu-mediapart-lille-orthophoto.png', alt: '', title: 'Vue satellite' },
+			{ path: '/projects/icu-mediapart-lille-temperatures.png', alt: '', title: 'Les températures de surface' },
+			{ path: '/projects/icu-mediapart-lille-niveau-de-vie.png', alt: '', title: 'Le niveau de vie moyen' },
+			{ path: '/projects/icu-mediapart-lille-vulnerabilites.png', alt: '', title: 'L’indicateur de vulnérabilité' },
 		],
 		shortDesc: `
 	    Une collaboration avec Mediapart sur les possibles corrélations entre inégalités climatiques et inégalités sociales.
 		`,
 		fullDesc: icuMediapart,
-		// `
-		//   https://www.mediapart.fr/journal/ecologie/120823/inegalites-climatiques-comment-les-riches-accaparent-les-espaces-verts
-		// `,
 		coAuthors: ["Mickaël Correia", "Donatien Huet"]
 	},
 };
