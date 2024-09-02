@@ -8,7 +8,7 @@
 	<meta name="description" content="Lorem Ipsum" />
 </svelte:head>
 
-<div class="flex flex-col gap-8 md:gap-20">
+<div class="m-auto flex max-w-4xl flex-col gap-8 md:gap-20">
 	{#each Object.entries(projects) as [slug, data], idx}
 		<ProjectThumbnail {idx} {slug} {data} />
 	{/each}

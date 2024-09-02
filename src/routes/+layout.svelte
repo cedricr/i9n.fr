@@ -19,7 +19,7 @@
 	</a>
 {/snippet}
 
-<div id="content" class="m-auto max-w-5xl px-5 py-8">
+<div id="content" class="m-auto max-w-7xl px-5 py-8">
 	<header
 		class="mb-4 flex flex-col border-b pb-4 text-center md:mb-16 md:flex-row md:justify-between md:text-left"
 	>
