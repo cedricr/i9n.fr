@@ -36,7 +36,6 @@
 
 <svelte:head>
 	<title>{data.title} | Instigation</title>
-	<meta name="description" content="Lorem Ipsum" />
 </svelte:head>
 
 <div class="flex flex-col gap-16 text-zinc-700 md:flex-row">

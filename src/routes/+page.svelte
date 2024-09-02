@@ -5,7 +5,6 @@
 
 <svelte:head>
 	<title>Instigation</title>
-	<meta name="description" content="Lorem Ipsum" />
 </svelte:head>
 
 <div class="m-auto flex max-w-4xl flex-col gap-8 md:gap-20">
