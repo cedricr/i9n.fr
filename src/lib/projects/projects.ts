@@ -1,20 +1,20 @@
 import type { Projects } from '$lib/types';
+import ensoleillement from "$lib/projects/assets/ensoleillement.md?raw"
 
 const projects: Projects = {
 	"ensoleillement": {
-		title: "Cartes d’ensoleillement",
+		title: "Ensoleillement",
 		thumbnail: "/projects/ensoleillement-thumb.jpg",
 		images: [
-			{ path: '/projects/ensoleillement-nice.jpg', alt: 'Lorem ipsum' },
-			{ path: '/projects/ensoleillement-blois.png', alt: 'Lorem ipsum' }
+			{ path: '/projects/ensoleillement-nice.jpg', alt: '', title: "Quartier du Vieux-Nice, 18 juillet 2024" },
+			{ path: '/projects/ensoleillement-blois.png', alt: '', title: "Centre-ville de Blois, 21 juin 2024" }
 		],
 		shortDesc: `
-			Cartes d’ensoleillement à partir de modèles numériques de surface. La luminosité de chaque point 
-			de l’image correspond à son éclairage au long d’une journée : un point blanc est toujours au soleil, un point noir ne le voit jamais.
+			Cartes d’ensoleillement réalisées à partir de modèles numériques de surface. 
+			La luminosité de chaque point  de l’image correspond à son éclairage au long 
+			d’une journée : un point blanc est toujours au soleil, un point noir n’y est jamais.
 		`,
-		fullDesc: `
-			https://geoservices.ign.fr/modeles-numeriques-de-surfaces-correles
-		`
+		fullDesc: ensoleillement
 	},
 	"europeennes-2024": {
 		title: "Résultats des élections européennes 2024",

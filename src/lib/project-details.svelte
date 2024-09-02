@@ -5,7 +5,6 @@
 
 	const converter = new showdown.Converter({
 		headerLevelStart: 3,
-		smartIndentationFix: true,
 		openLinksInNewWindow: true
 	});
 
