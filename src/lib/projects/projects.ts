@@ -52,7 +52,9 @@ const projects: Projects = {
 		title: "Canopée des villes françaises",
 		thumbnail: "/projects/canopee-lidarhd-thumb.jpg",
 		images: [
-			{ path: '/projects/canope-toulouse.png', alt: '' }
+			{ path: '/projects/canopee-toulouse.png', alt: '', title: "" },
+			{ path: '/projects/canopee-before.jpg', alt: '', title: "Orthophoto seule" },
+			{ path: "/projects/canopee-after.jpg", alt: '', title: "Orthophoto avec détection de la canopée. L’intensité du vert représente la hauteur." },
 		],
 		shortDesc: "Extraction de la canopée à partir des données LidarHD de l’IGN.",
 		fullDesc: canopeeLidarHd

@@ -16,24 +16,6 @@
 	let { idx = 0, slug, data }: Props = $props();
 </script>
 
-{#snippet displayAuthors(authors: string[])}
-	{#if authors?.length}
-		<div class="text-sm text-zinc-500">
-			Avec {#each authors as author, i}
-				{@const l = authors.length}
-				{#if i > 0}
-					{#if i !== l - 1}
-						,
-					{:else}
-						&nbsp;et
-					{/if}
-				{/if}
-				{author}
-			{/each}
-		</div>
-	{/if}
-{/snippet}
-
 <svelte:head>
 	<title>{data.title} | Instigation</title>
 </svelte:head>

@@ -1,8 +1,13 @@
+export interface ImageDef {
+	path: string; alt: string, title?: string
+}
+
+
 export interface Project {
 	title: string;
 	thumbnail: string;
 	shortDesc: string;
-	images: { path: string; alt: string, title?: string }[];
+	images: ImageDef[];
 	fullDesc?: string;
 	coAuthors?: string[];
 }
