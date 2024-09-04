@@ -6,10 +6,24 @@ import visionscartoCircos from "$lib/projects/assets/visionscarto-circos.md?raw"
 import seqeUe from "$lib/projects/assets/seqe-ue.md?raw";
 import icuParisNacis from "$lib/projects/assets/icu-paris-nacis.md?raw";
 import icuMediapart from "$lib/projects/assets/icu-mediapart.md?raw";
+import urgences from "$lib/projects/assets/urgences.md?raw";
 
 
 
 const projects: Projects = {
+	"urgences": {
+		title: "Proximité aux urgences hospitalières",
+		thumbnail: "/projects/urgences-thumb.jpg",
+		images: [
+			{
+				path: '/projects/urgences-1080.jpg', alt: '',
+			}
+		],
+		shortDesc: `
+			Réalisation dans le cadre du 1er Concours Carto de l’IGN. Coup de cœur du jury.
+		`,
+		fullDesc: urgences
+	},
 	"ensoleillement": {
 		title: "Ensoleillement",
 		thumbnail: "/projects/ensoleillement-thumb.jpg",
@@ -29,24 +43,6 @@ const projects: Projects = {
 			d’une journée : un point blanc est toujours au soleil, un point noir n’y est jamais.
 		`,
 		fullDesc: ensoleillement
-	},
-	"europeennes-2024": {
-		title: "Résultats des élections européennes 2024",
-		thumbnail: "/projects/europeennes-2024-thumb.jpg",
-		images: [
-			{
-				path: '/projects/europeennes-2024-cartogramme.png', alt: '',
-				title: "Cartogramme des résultats"
-			},
-			{
-				path: '/projects/europeennes-2024-densite-points.png', alt: '',
-				title: "Carte en densité de points des résultats"
-			}
-		],
-		shortDesc: `
-	    Expérimentations cartographiques pour essayer de representer de façon plus juste les votant·es.
-		`,
-		fullDesc: europeennes2024,
 	},
 	"canopee-lidarhd": {
 		title: "Canopée des villes françaises",
@@ -95,6 +91,7 @@ const projects: Projects = {
 		],
 		shortDesc: `
 			Une représentation sous forme de contours d’élévation des températures de surface de Paris. 
+			Mention honorable lors de sa soumission au Vol. VI de « l’Atlas of Design » de la NACIS.
 		`,
 		fullDesc: icuParisNacis
 	},
@@ -113,6 +110,24 @@ const projects: Projects = {
 		`,
 		fullDesc: icuMediapart,
 		coAuthors: ["Mickaël Correia", "Donatien Huet"]
+	},
+	"europeennes-2024": {
+		title: "Résultats des élections européennes 2024",
+		thumbnail: "/projects/europeennes-2024-thumb.jpg",
+		images: [
+			{
+				path: '/projects/europeennes-2024-cartogramme.png', alt: '',
+				title: "Cartogramme des résultats"
+			},
+			{
+				path: '/projects/europeennes-2024-densite-points.png', alt: '',
+				title: "Carte en densité de points des résultats"
+			}
+		],
+		shortDesc: `
+	    Expérimentations cartographiques pour essayer de representer de façon plus juste les votant·es.
+		`,
+		fullDesc: europeennes2024,
 	},
 };
 
