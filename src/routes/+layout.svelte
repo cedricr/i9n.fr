@@ -24,7 +24,7 @@
 		class="mb-4 flex flex-col border-b pb-4 text-center md:mb-16 md:flex-row md:justify-between md:text-left"
 	>
 		<div class="mb-2 md:mb-0 md:self-baseline">
-			<h1 class="font-title text-4xl font-semibold text-zinc-700 md:text-5xl">
+			<h1 class="font-title font-alternate text-4xl font-semibold text-zinc-700 md:text-5xl">
 				{#if $page.url.pathname !== '/'}<a
 						href="/"
 						class="no-underline hover:underline focus:underline">Instigation</a
