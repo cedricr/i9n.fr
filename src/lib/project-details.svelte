@@ -38,13 +38,8 @@
 	<div class="flex flex-col gap-4 md:basis-7/12">
 		{#each data.images as image}
 			<figure>
-				<a href={image.path} target="_blank">
-					<img
-						class="cover block object-cover drop-shadow-md"
-						src={image.path}
-						alt={image.alt}
-						aria-label="Ouverture dans un nouvel onglet"
-					/>
+				<a href={image.path} data-sveltekit-reload>
+					<img class="cover block object-cover drop-shadow-md" src={image.path} alt={image.alt} />
 				</a>
 				{#if image.title}
 					<figcaption class="mt-2 text-sm italic text-zinc-600">{image.title}</figcaption>
